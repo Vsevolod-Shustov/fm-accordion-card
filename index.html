@@ -8,33 +8,61 @@
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class="container">
+    <div class="component">
+      <div class="image">
+        <img
+        srcset="images/illustration-woman-online-mobile.svg 237w, images/illustration-woman-online-desktop.svg 472w"
+        sizes="(max-width: 1440px) 237px,
+              472px"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="image of a woman working with a computer" />
+      </div>
+      <div class="text">
+        <h1>FAQ</h1>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <div class="faq">
+          <input type="checkbox" id="faq1">
+          <label class="faq-label" for="faq1">How many team members can I invite?</label>
+          <div class="faq-content">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </div>
+        </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <div class="faq">
+          <input type="checkbox" id="faq2">
+          <label class="faq-label" for="faq2">What is the maximum file upload size?</label>
+          <div class="faq-content">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+        </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <div class="faq">
+          <input type="checkbox" id="faq3">
+          <label class="faq-label" for="faq3">How do I reset my password?</label>
+          <div class="faq-content">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </div>
+        </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <div class="faq">
+          <input type="checkbox" id="faq4">
+          <label class="faq-label" for="faq4">Can I cancel my subscription?</label>
+          <div class="faq-content">Yes! Send us a message and we’ll process your request no questions asked.</div>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <div class="faq">
+          <input type="checkbox" id="faq5">
+          <label class="faq-label" for="faq5">Do you provide additional support?</label>
+          <div class="faq-content">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+        </div>
+      </div>
+    </div>
   </div>
+  
 </body>
 </html>
